@@ -1,5 +1,10 @@
-<h1> There are <%= @projects.count %> projects </h1>
 
-<ul>
-  <%= render :partial => @posts %>
-</ul>
+<% if @projects.count > 0 %>
+  <h1> There are <%= @projects.count %> projects </h1>
+
+  <ul>
+    <%= render :partial => @projects %>
+  </ul>
+<% else %>
+  <h3> There are no projects! </h3>
+<% end %>
