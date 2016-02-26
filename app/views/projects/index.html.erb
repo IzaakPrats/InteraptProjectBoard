@@ -1,0 +1,7 @@
+<h1> There are <%= @projects.count %> projects </h1>
+
+<ul>
+  <% @projects.each do |project| %>
+    <li> <%= @project.title %> </li>
+  <% end %>
+<ul>
