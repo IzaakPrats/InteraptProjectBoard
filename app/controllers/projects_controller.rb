@@ -9,6 +9,9 @@ class ProjectsController < ApplicationController
   end
 
   def new
-    @project = current_user.projects.new
+
+    if user_signed_in?
+      @project = current_user.projects.new
+    end
   end
 end
