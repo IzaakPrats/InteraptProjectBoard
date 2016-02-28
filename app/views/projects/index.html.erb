@@ -10,9 +10,16 @@
     <h1> There is <%= @projects.count %> project </h1>
   <% end %>
 
-  <ul>
-    <%= render :partial => @projects %>
-  </ul>
+  <% @projects.each_slice(3) do |projects_slice| -%>
+    <div class="row">
+      <ul>
+        <% @projects_slice.each do |project| -%>
+          <%= render :partial => @projects %>
+        <% end -%>
+      </ul>
+    </div>
+  <% end -%>
+
 <% else %>
   <h3> There are no projects! </h3>
 <% end %>
