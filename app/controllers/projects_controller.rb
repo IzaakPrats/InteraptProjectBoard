@@ -23,6 +23,7 @@ class ProjectsController < ApplicationController
     else
       render 'static_pages/home'
     end
+  end
 
     private
 
