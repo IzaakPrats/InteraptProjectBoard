@@ -13,9 +13,7 @@
   <% @projects.each_slice(3) do |projects_slice| -%>
     <div class="row">
       <ul>
-        <% @projects_slice.each do |project| -%>
-          <%= render :partial => @projects %>
-        <% end -%>
+        <%= render :partial => projects_slice %>
       </ul>
     </div>
   <% end -%>
