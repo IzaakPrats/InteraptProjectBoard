@@ -138,3 +138,21 @@ footer {
     }
   }
 }
+
+/* project */
+
+.project {
+
+  background-color: $light_gray;
+  border: 1px solid #000000;
+
+  h5 {
+    font-size: 1.5em;
+    font-style: oblique;
+  }
+
+  p {
+    font-size: 0.5em;
+  }
+
+}
