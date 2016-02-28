@@ -12,7 +12,7 @@
 
   <% @projects.each_slice(3) do |projects_slice| -%>
     <div class="row">
-      <ul>
+      <ul class="list-inline">
         <%= render :partial => projects_slice %>
       </ul>
     </div>
