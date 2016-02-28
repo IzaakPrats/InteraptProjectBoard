@@ -10,6 +10,7 @@ class ProjectsController < ApplicationController
 
   def new
     if user_signed_in?
+      @user = current_user
       @project = current_user.projects.new
     end
   end
